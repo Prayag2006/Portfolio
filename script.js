@@ -419,8 +419,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (fadeSections.length > 0) {
         const observerOptions = {
             root: null,
-            threshold: 0.12,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.04,
+            rootMargin: '0px 0px -20px 0px'
         };
 
         const observer = new IntersectionObserver((entries, observer) => {
@@ -454,7 +454,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.15 });
+        }, { threshold: 0.05 });
 
         blueprintObserver.observe(blueprintSection);
     }

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayag Kansara | Full Stack Developer & UI/UX Engineer</title>
+    <meta name="description" content="Portfolio of Prayag Kansara - Full Stack Developer & UI/UX Designer. Specializing in high-performance full-stack applications, robust backend architectures, and bespoke digital interfaces.">
+    <!-- Google Fonts: Syne & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=1.1.4">
+</head>
+<body>
+    <!-- Premium Noise Film Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Interactive Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Mouse Tracking Glow Aura -->
+    <div id="glow-aura"></div>
+
+    <!-- Top Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-follower"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="site-header">
+        <div class="nav-container">
+            <a href="#" class="logo" id="nav-logo">
+                <span>P</span>RAYAG.K
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#services" class="nav-link" id="link-services">Services</a>
+                <a href="#work" class="nav-link" id="link-work">Projects</a>
+                <a href="#tech-stack" class="nav-link" id="link-tech">Arsenal</a>
+                <a href="#about" class="nav-link" id="link-about">About</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-pill btn-neon btn-magnetic" id="cta-header">Let's Connect</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero-section">
+            <div class="hero-container">
+                <div class="hero-content fade-in-section">
+                    <span class="hero-tagline">FULL STACK DEVELOPER</span>
+                    <h1 class="hero-title">
+                        <span class="outline-text">ENGINEERING</span><br>
+                        <span class="solid-text">CODE.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        I am Prayag Kansara. I build high-performance full-stack web applications, robust database architectures, and bespoke digital experiences that perform flawlessly.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#work" class="btn btn-primary btn-neon btn-magnetic" id="btn-view-work">Explore Work</a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-contact-me">Get In Touch</a>
+                    </div>
+                </div>
+                <!-- Interactive Parallax Hero Card -->
+                <div class="hero-card-wrapper fade-in-section delay-1">
+                    <div class="hero-interactive-card" id="hero-interactive-card">
+                        <div class="card-inner">
+                            <div class="card-header">
+                                <div class="dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <span class="tag">Active Status</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>Creative Web Systems</h3>
+                                <p>Delivering production-ready React layouts, Svelte prototypes, and micro-interactions with 100% Google Lighthouse scores.</p>
+                                <div class="card-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-num">15+</span>
+                                        <span class="stat-lbl">Projects Done</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-num">100%</span>
+                                        <span class="stat-lbl">Job Success</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="pulse-indicator"></div>
+                                <span>Available for custom projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll Manifesto Section -->
+        <section class="manifesto-section" id="manifesto">
+            <div class="section-container">
+                <div class="manifesto-wrapper fade-in-section">
+                    <span class="manifesto-tag">Visual Philosophy</span>
+                    <h3 class="manifesto-text">
+                        I believe web development is more than writing code. It is about creating <span class="highlight-word">living digital architectures</span> that merge logical engineering with <span class="highlight-word">immersive visual feedback</span>, ensuring that every freelance project commands authority.
+                    </h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid Section -->
+        <section class="services-section" id="services">
+            <div class="section-container">
+                <div class="section-header fade-in-section">
+                    <h2 class="section-title">Core Services</h2>
+                    <p class="section-desc">Bespoke technical solutions engineered to give your digital products an edge over the competition.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card fade-in-section">
+                        <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3 class="service-title">Full Stack Engineering</h3>
+                        <p class="service-text">Developing scalable server architectures, secure APIs, and responsive React/Next.js client-side interfaces with clean database pipelines.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card fade-in-section delay-1">
+                        <div class="service-icon"><i class="fa-solid fa-compass"></i></div>
+                        <h3 class="service-title">Interaction Design</h3>
+                        <p class="service-text">Crafting fluid transitions, complex scroll reveals, dynamic hover state followers, and responsive micro-animations that engage audiences.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card fade-in-section delay-2">
+                        <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3 class="service-title">Optimization & Security</h3>
+                        <p class="service-text">Implementing secure server middleware, query optimization, database caching, and asset compression for peak Lighthouse scores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrolling Ticker Marquee #1 -->
+        <section class="ticker-section">
+            <div class="ticker-wrapper" id="ticker-marquee">
+                <div class="ticker-content">
+                    <span>CREATIVE ENGINEERING</span><span class="dot">•</span>
+                    <span>REACT & NEXT.JS</span><span class="dot">•</span>
+                    <span>UI/UX DESIGN</span><span class="dot">•</span>
+                    <span>PERFORMANCE OPTIMIZATION</span><span class="dot">•</span>
+                    <span>INTERACTION ANIMATIONS</span><span class="dot">•</span>
+                    <span>TYPESCRIPT</span><span class="dot">•</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Work Section -->
+        <section class="work-section" id="work">
+            <div class="section-container">
+                <div class="section-header fade-in-section">
+                    <h2 class="section-title">Selected Projects</h2>
+                    <p class="section-desc">A gallery of design-engineered web applications utilizing modern stacks and premium motion transitions.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 (New Zealand Government) -->
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7463155123305975808/" target="_blank" rel="noopener noreferrer" class="project-card fade-in-section" id="project-3">
+                        <div class="project-img-container">
+                            <img src="assets/project3.png" alt="New Zealand Government Portal Widgets" class="project-img">
+                            <div class="project-hover-badge">
+                                <span class="badge-text">Inspect</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <div class="project-meta">
+                                        <span class="project-category">Vanilla JS / Accessibility / SVG</span>
+                                        <h3 class="project-name">New Zealand Government Contract</h3>
+                                    </div>
+                                    <span class="project-link-btn" aria-label="Launch NZ Gov Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Project 2 (MYP Electrical Solutions) -->
+                    <a href="https://mypelectrical.co.nz/" target="_blank" rel="noopener noreferrer" class="project-card fade-in-section delay-1" id="project-2">
+                        <div class="project-img-container">
+                            <img src="assets/project2.png" alt="MYP Electrical Solutions" class="project-img">
+                            <div class="project-hover-badge">
+                                <span class="badge-text">View</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <div class="project-meta">
+                                        <span class="project-category">JS / SCSS / Responsive Web</span>
+                                        <h3 class="project-name">MYP Electrical Solutions</h3>
+                                    </div>
+                                    <span class="project-link-btn" aria-label="Launch MYP Electrical Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Project 3 (RAJ Chemist Attendance System) -->
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7466555537053339648/" target="_blank" rel="noopener noreferrer" class="project-card fade-in-section delay-2" id="project-1">
+                        <div class="project-img-container">
+                            <img src="assets/project1.png" alt="RAJ Chemist Attendance System" class="project-img">
+                            <div class="project-hover-badge">
+                                <span class="badge-text">Launch</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <div class="project-meta">
+                                        <span class="project-category">React / HTML5 / LocalStorage</span>
+                                        <h3 class="project-name">RAJ Chemist Attendance System</h3>
+                                    </div>
+                                    <span class="project-link-btn" aria-label="Launch RAJ Chemist Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section class="experience-section" id="experience">
+            <div class="section-container">
+                <div class="section-header fade-in-section">
+                    <h2 class="section-title">Project Roadmap</h2>
+                    <p class="section-desc">A chronological roadmap of my freelance work history, client achievements, and project developments.</p>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    <!-- Timeline Item 1 (New Zealand Government Contract) -->
+                    <div class="timeline-item fade-in-section">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jan 2025 - June 2025</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role-title">Full Stack Web Contractor</h3>
+                            <h4 class="company-name">New Zealand Government Contract</h4>
+                            <p class="role-desc">Engineering highly accessible server-rendered UI components, interactive widgets, and secure data visualizers, ensuring full compliance with national benchmarks.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 2 (MYP Electrical Solutions) -->
+                    <div class="timeline-item fade-in-section delay-1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">June 2025 - Dec 2025</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role-title">Freelance Full Stack Developer</h3>
+                            <h4 class="company-name">MYP Electrical Solutions</h4>
+                            <p class="role-desc">Designed and programmed a custom responsive service portal. Built custom scheduling systems, refined database request speeds, and integrated smooth CSS-based interaction modules.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3 (RAJ Chemist Attendance System) -->
+                    <div class="timeline-item fade-in-section delay-2">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jan 2026 - March 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role-title">Freelance Full Stack Developer</h3>
+                            <h4 class="company-name">RAJ Chemist Attendance System</h4>
+                            <p class="role-desc">Built a custom employee attendance monitoring dashboard. Programmed secure Node.js session logging, checked clock-in margins, and designed clean visual stat charts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creative Process Section -->
+        <section class="process-section" id="process">
+            <div class="section-container">
+                <div class="section-header fade-in-section">
+                    <h2 class="section-title">Creative Process</h2>
+                    <p class="section-desc">My step-by-step engineering and design methodology for delivering high-impact digital solutions.</p>
+                </div>
+                <div class="process-grid">
+                    <!-- Step 1 -->
+                    <div class="process-card fade-in-section">
+                        <div class="process-num">01</div>
+                        <h3 class="process-card-title">Discover & Strategy</h3>
+                        <p class="process-card-desc">Analyzing requirements, defining user flows, and mapping the technical architecture in Figma to establish a rock-solid foundation.</p>
+                        <div class="process-accent-bar"></div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-card fade-in-section delay-1">
+                        <div class="process-num">02</div>
+                        <h3 class="process-card-title">Interface Design</h3>
+                        <p class="process-card-desc">Crafting pixel-perfect layouts, designing modern typography systems, and building glassmorphic visual assets with high aesthetic values.</p>
+                        <div class="process-accent-bar"></div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-card fade-in-section delay-2">
+                        <div class="process-num">03</div>
+                        <h3 class="process-card-title">High-Performance Code</h3>
+                        <p class="process-card-desc">Engineering clean, responsive, and semantic codebases utilizing modern JavaScript, React/Next.js frameworks, and optimized asset pipelines.</p>
+                        <div class="process-accent-bar"></div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="process-card fade-in-section delay-3">
+                        <div class="process-num">04</div>
+                        <h3 class="process-card-title">Fluid Motion & Launch</h3>
+                        <p class="process-card-desc">Integrating smooth custom mouse cursor trackers, LERP camera movements, CSS transforms, and auditing loading performance for clean delivery.</p>
+                        <div class="process-accent-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Profile Section -->
+        <section class="about-section" id="about">
+            <div class="about-bg-blur"></div>
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper fade-in-section">
+                        <div class="about-img-container">
+                            <img src="assets/profile.png" alt="Prayag Kansara Profile Portrait" class="about-img">
+                        </div>
+                    </div>
+                    <div class="about-content-wrapper fade-in-section delay-1">
+                        <h2 class="section-title">My Background</h2>
+                        <h3 class="about-tagline">Developing clean structural code, designing fluid micro-animations.</h3>
+                        <p class="about-text">
+                            I am a full stack developer based in India. My philosophy revolves around engineering robust server architectures and database pipelines, combined with clean, pixel-perfect frontend experiences that perform flawlessly across devices.
+                        </p>
+                        <p class="about-text">
+                            I specialize in end-to-end web applications. By focusing on secure session routing, optimized database queries, and fluid user transitions, I build platforms that are highly performant and secure.
+                        </p>
+                        <div class="about-skills">
+                            <h4>Modern Toolbox</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">JavaScript / TypeScript</span>
+                                <span class="skill-tag">React / Next.js</span>
+                                <span class="skill-tag">Node.js / Express</span>
+                                <span class="skill-tag">PostgreSQL / MongoDB</span>
+                                <span class="skill-tag">REST / GraphQL APIs</span>
+                                <span class="skill-tag">Docker / Cloud Services</span>
+                                <span class="skill-tag">TailwindCSS & SCSS</span>
+                                <span class="skill-tag">Git & Version Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="tech-stack-section" id="tech-stack">
+            <div class="section-container">
+                <div class="section-header fade-in-section">
+                    <h2 class="section-title">Digital Arsenal</h2>
+                    <p class="section-desc">A curated collection of modern technologies and tools I employ to design and develop production-grade products.</p>
+                </div>
+                <div class="tech-grid">
+                    <!-- Category 1: Frontend Core -->
+                    <div class="tech-category-card glass-card fade-in-section">
+                        <h3 class="tech-category-title"><i class="fa-solid fa-code"></i> Frontend Core</h3>
+                        <div class="tech-list">
+                            <div class="tech-item" data-tech="javascript">
+                                <span class="tech-icon"><i class="fa-brands fa-js"></i></span>
+                                <span class="tech-name">JavaScript (ES6+)</span>
+                            </div>
+                            <div class="tech-item" data-tech="typescript">
+                                <span class="tech-icon"><i class="fa-solid fa-circle-nodes"></i></span>
+                                <span class="tech-name">TypeScript</span>
+                            </div>
+                            <div class="tech-item" data-tech="react">
+                                <span class="tech-icon"><i class="fa-brands fa-react"></i></span>
+                                <span class="tech-name">React.js</span>
+                            </div>
+                            <div class="tech-item" data-tech="next">
+                                <span class="tech-icon"><i class="fa-solid fa-n"></i></span>
+                                <span class="tech-name">Next.js Framework</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category 2: Backend & Database -->
+                    <div class="tech-category-card glass-card fade-in-section delay-1">
+                        <h3 class="tech-category-title"><i class="fa-solid fa-server"></i> Backend & DB</h3>
+                        <div class="tech-list">
+                            <div class="tech-item" data-tech="node">
+                                <span class="tech-icon"><i class="fa-brands fa-node-js"></i></span>
+                                <span class="tech-name">Node.js / Express</span>
+                            </div>
+                            <div class="tech-item" data-tech="database">
+                                <span class="tech-icon"><i class="fa-solid fa-database"></i></span>
+                                <span class="tech-name">PostgreSQL / Mongo</span>
+                            </div>
+                            <div class="tech-item" data-tech="apis">
+                                <span class="tech-icon"><i class="fa-solid fa-gears"></i></span>
+                                <span class="tech-name">REST & GraphQL</span>
+                            </div>
+                            <div class="tech-item" data-tech="server">
+                                <span class="tech-icon"><i class="fa-solid fa-cloud"></i></span>
+                                <span class="tech-name">Docker / Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category 3: Styling & Workflow -->
+                    <div class="tech-category-card glass-card fade-in-section delay-2">
+                        <h3 class="tech-category-title"><i class="fa-solid fa-laptop-code"></i> Styling & Workflow</h3>
+                        <div class="tech-list">
+                            <div class="tech-item" data-tech="css">
+                                <span class="tech-icon"><i class="fa-brands fa-css3-alt"></i></span>
+                                <span class="tech-name">CSS3 & SCSS</span>
+                            </div>
+                            <div class="tech-item" data-tech="tailwind">
+                                <span class="tech-icon"><i class="fa-solid fa-wind"></i></span>
+                                <span class="tech-name">TailwindCSS</span>
+                            </div>
+                            <div class="tech-item" data-tech="figma">
+                                <span class="tech-icon"><i class="fa-brands fa-figma"></i></span>
+                                <span class="tech-name">Figma Prototyping</span>
+                            </div>
+                            <div class="tech-item" data-tech="git">
+                                <span class="tech-icon"><i class="fa-brands fa-git-alt"></i></span>
+                                <span class="tech-name">Git & GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Reviews Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="section-container">
+                <div class="section-header fade-in-section">
+                    <h2 class="section-title">Client Feedback</h2>
+                    <p class="section-desc">Testimonials from clients and project managers on delivered freelance products.</p>
+                </div>
+                <div class="reviews-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card glass-card fade-in-section">
+                        <div class="review-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-quote">"Prayag built a highly robust attendance system for our pharmacy. The dashboard checks check-in delays and logs entries checkins flawlessly. Highly recommended!"</p>
+                        <div class="review-author">
+                            <div class="author-info">
+                                <span class="author-name">Director of Operations</span>
+                                <span class="author-comp">RAJ Chemist Pharmacy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="review-card glass-card fade-in-section delay-1">
+                        <div class="review-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-quote">"Excellent technical skill. Prayag designed our business services portal from scratch. The interface is responsive and page load times are extremely fast."</p>
+                        <div class="review-author">
+                            <div class="author-info">
+                                <span class="author-name">Operations Manager</span>
+                                <span class="author-comp">MYP Electrical Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="review-card glass-card fade-in-section delay-2">
+                        <div class="review-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-quote">"Delivered clean, semantic components that satisfy all WCAG 2.1 accessibility criteria. Great communication and professional coding standards."</p>
+                        <div class="review-author">
+                            <div class="author-info">
+                                <span class="author-name">Senior Project Lead</span>
+                                <span class="author-comp">NZ Gov Digital Department</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Blueprint Section -->
+        <section class="blueprint-section" id="blueprint">
+            <div class="section-container">
+                <div class="blueprint-grid">
+                    <div class="blueprint-info fade-in-section">
+                        <h2 class="section-title">Technical Blueprint</h2>
+                        <p class="about-text">
+                            I audit my code against high-performance standard checklists. Here is the operational efficiency breakdown of systems I design and engineer.
+                        </p>
+                    </div>
+                    <div class="blueprint-bars fade-in-section delay-1">
+                        <!-- Bar 1 -->
+                        <div class="skill-bar-group">
+                            <div class="skill-bar-info">
+                                <span class="skill-bar-name">Interface Design & Aesthetics</span>
+                                <span class="skill-bar-percent">95%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <!-- Bar 2 -->
+                        <div class="skill-bar-group">
+                            <div class="skill-bar-info">
+                                <span class="skill-bar-name">Full Stack Architecture (Node/React)</span>
+                                <span class="skill-bar-percent">92%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <!-- Bar 3 -->
+                        <div class="skill-bar-group">
+                            <div class="skill-bar-info">
+                                <span class="skill-bar-name">Semantic Accessibility (WCAG 2.1)</span>
+                                <span class="skill-bar-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <!-- Bar 4 -->
+                        <div class="skill-bar-group">
+                            <div class="skill-bar-info">
+                                <span class="skill-bar-name">Lighthouse Performance Optimization</span>
+                                <span class="skill-bar-percent">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- HUD Metrics Section -->
+        <section class="hud-metrics-section" id="hud-metrics">
+            <div class="section-container">
+                <div class="section-header fade-in-section">
+                    <h2 class="section-title">Performance Metrics</h2>
+                    <p class="section-desc">Real-world benchmarking metrics applied to my production codebases to guarantee extreme responsiveness.</p>
+                </div>
+                <div class="hud-grid">
+                    <!-- Metric 1 -->
+                    <div class="hud-card glass-card fade-in-section">
+                        <div class="hud-glow"></div>
+                        <div class="hud-header">
+                            <span class="hud-label">Lighthouse Core</span>
+                            <span class="hud-status"><span class="pulse-dot"></span> Active</span>
+                        </div>
+                        <div class="hud-value">100%</div>
+                        <div class="hud-footer">Perfect Performance & SEO Scores</div>
+                    </div>
+                    <!-- Metric 2 -->
+                    <div class="hud-card glass-card fade-in-section delay-1">
+                        <div class="hud-glow"></div>
+                        <div class="hud-header">
+                            <span class="hud-label">Interaction Delay (INP)</span>
+                            <span class="hud-status"><span class="pulse-dot"></span> Active</span>
+                        </div>
+                        <div class="hud-value">&lt;50ms</div>
+                        <div class="hud-footer">Ultra-Responsive Micro-interactions</div>
+                    </div>
+                    <!-- Metric 3 -->
+                    <div class="hud-card glass-card fade-in-section delay-2">
+                        <div class="hud-glow"></div>
+                        <div class="hud-header">
+                            <span class="hud-label">First Contentful Paint (FCP)</span>
+                            <span class="hud-status"><span class="pulse-dot"></span> Active</span>
+                        </div>
+                        <div class="hud-value">0.4s</div>
+                        <div class="hud-footer">High-Speed Asset Compression</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion Section -->
+        <section class="faq-section" id="faq">
+            <div class="section-container">
+                <div class="section-header fade-in-section">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-desc">Answers to common queries regarding my development stack, workflow structure, and availability.</p>
+                </div>
+                <div class="faq-list">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item fade-in-section">
+                        <button class="faq-trigger" id="faq-q-1">
+                            <span>What is your main technology stack?</span>
+                            <span class="faq-icon-box"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                <p>My core stack centers around modern JavaScript/TypeScript across the entire stack, including React and Next.js on the frontend, Node.js and Express on the backend, PostgreSQL/MongoDB for databases, and REST/GraphQL APIs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="faq-item fade-in-section">
+                        <button class="faq-trigger" id="faq-q-2">
+                            <span>Do you work with international clients?</span>
+                            <span class="faq-icon-box"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                <p>Yes, I work fully remotely with clients worldwide. I maintain asynchronous workflows, clear updates over Slack/Discord, and deliver progress reports through GitHub and staging links.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="faq-item fade-in-section">
+                        <button class="faq-trigger" id="faq-q-3">
+                            <span>What is your typical project timeline?</span>
+                            <span class="faq-icon-box"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                <p>A standard interactive web application project takes between 2 to 4 weeks depending on the complexity of layouts, animations, database integrations, and responsiveness revisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <div class="contact-header-block fade-in-section">
+                    <h2 class="section-title">Start a Conversation</h2>
+                    <p class="section-desc">Looking to build a custom application, level up a design system, or discuss an opportunity? Get in touch.</p>
+                </div>
+                
+                <div class="contact-details-row fade-in-section">
+                    <div class="detail-card glass-card">
+                        <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="detail-info">
+                            <span class="detail-lbl">Email me</span>
+                            <a href="mailto:prayagkansara05@gmail.com" class="detail-val">prayagkansara05@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="detail-card glass-card">
+                        <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="detail-info">
+                            <span class="detail-lbl">Based in</span>
+                            <span class="detail-val">Gujarat, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-block fade-in-section delay-1">
+                    <form id="portfolio-contact-form" class="glass-form" action="#" method="POST">
+                        <div class="form-grid-row">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="name" placeholder="Prayag Kansara" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" placeholder="prayagkansara05@gmail.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" placeholder="Project Discussion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" placeholder="Let me know how we can work together..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-neon btn-block btn-magnetic" id="btn-submit-form">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrolling Ticker Marquee #2 (Reverse direction) -->
+        <section class="ticker-section">
+            <div class="ticker-wrapper reverse-ticker" id="ticker-marquee-2">
+                <div class="ticker-content">
+                    <span>LET'S BUILD SOMETHING UNIQUE</span><span class="dot">•</span>
+                    <span>WORK WITH ME</span><span class="dot">•</span>
+                    <span>PRAYAG KANSARA</span><span class="dot">•</span>
+                    <span>GET IN TOUCH NOW</span><span class="dot">•</span>
+                    <span>EXPERT WEB ENGINEERING</span><span class="dot">•</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span>P</span>RAYAG.K
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/prayag-kansara-05a2bb214/" target="_blank" rel="noopener noreferrer" class="social-link btn-magnetic" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Prayag2006" target="_blank" rel="noopener noreferrer" class="social-link btn-magnetic" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="social-link btn-magnetic" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Prayag Kansara. All rights reserved. Crafted with premium design guidelines.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

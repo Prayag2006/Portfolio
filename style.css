@@ -565,7 +565,7 @@ section {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
 
@@ -680,8 +680,8 @@ section {
    ========================================================================== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 .project-card {
@@ -1392,6 +1392,7 @@ section {
         gap: 30px;
         transition: left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         border-top: 1px solid var(--color-border);
+        overflow-y: auto;
     }
     
     .nav-menu.active {
@@ -1424,6 +1425,94 @@ section {
     }
 }
 
+@media (max-width: 576px) {
+    .section-container {
+        padding: 50px 0;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.9rem;
+    }
+    
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+    
+    .timeline-line {
+        left: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 35px;
+        gap: 10px;
+    }
+    
+    .timeline-dot {
+        left: 10px;
+        top: 25px;
+    }
+    
+    .timeline-date {
+        font-size: 0.95rem;
+    }
+    
+    .timeline-content.glass-card {
+        padding: 20px;
+    }
+    
+    .tech-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .faq-trigger {
+        padding: 18px 20px;
+        font-size: 1rem;
+    }
+    
+    .faq-content-inner {
+        padding: 0 20px 18px 20px;
+        font-size: 0.92rem;
+    }
+    
+    .logo {
+        font-size: 1.15rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-interactive-card {
+        padding: 20px;
+    }
+    
+    .card-stats {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .stat-num {
+        font-size: 1.5rem;
+    }
+    
+    .logo {
+        font-size: 1.1rem;
+    }
+}
+
 /* ==========================================================================
    CLIENT REVIEWS SECTION
    ========================================================================== */
@@ -1432,7 +1521,7 @@ section {
 }
 .reviews-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 .review-card {
@@ -1625,7 +1714,7 @@ section {
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -1771,7 +1860,7 @@ section {
 
 .hud-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 30px;
 }
 
@@ -1899,7 +1988,7 @@ section {
 
 .contact-details-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
     max-width: 800px;
     margin: 0 auto 50px auto;

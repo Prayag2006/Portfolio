@@ -285,6 +285,11 @@ section {
     will-change: transform;
 }
 
+/* Mobile only resume button default state */
+.mobile-resume-btn {
+    display: none;
+}
+
 /* ==========================================================================
    NAVIGATION HEADER
    ========================================================================== */
@@ -1975,6 +1980,10 @@ section {
     .nav-menu.active {
         transform: translateX(0);
         visibility: visible;
+    }
+    
+    .mobile-resume-btn {
+        display: inline-flex;
     }
     
     .nav-cta {

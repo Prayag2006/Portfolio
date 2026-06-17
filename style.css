@@ -1000,6 +1000,8 @@ section {
     font-size: 0.85rem;
     color: var(--color-text-secondary);
     transition: var(--transition-fast);
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 .skill-tag:hover {
@@ -2026,11 +2028,11 @@ section {
 
 @media (max-width: 480px) {
     .section-title {
-        font-size: clamp(1.5rem, 7vw, 1.8rem);
+        font-size: clamp(1.3rem, 7vw, 1.8rem);
     }
     
     .hero-title {
-        font-size: clamp(1.6rem, 8vw, 2.2rem);
+        font-size: clamp(1.3rem, 8vw, 2.2rem);
     }
     
     .timeline-line {

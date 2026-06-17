@@ -31,6 +31,11 @@
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -38,6 +43,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -565,7 +571,7 @@ section {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -680,7 +686,7 @@ section {
    ========================================================================== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -1375,6 +1381,10 @@ section {
 }
 
 @media (max-width: 768px) {
+    #glow-aura {
+        display: none;
+    }
+    
     .navbar {
         border-bottom: none;
     }
@@ -1382,7 +1392,7 @@ section {
     .nav-menu {
         position: fixed;
         top: 80px;
-        left: -100%;
+        left: 0;
         width: 100%;
         height: calc(100vh - 80px);
         background-color: var(--color-bg);
@@ -1390,13 +1400,16 @@ section {
         align-items: center;
         padding-top: 40px;
         gap: 30px;
-        transition: left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        transform: translateX(-100%);
+        visibility: hidden;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
         border-top: 1px solid var(--color-border);
         overflow-y: auto;
     }
     
     .nav-menu.active {
-        left: 0;
+        transform: translateX(0);
+        visibility: visible;
     }
     
     .nav-cta {
@@ -1423,6 +1436,12 @@ section {
     .section-title {
         font-size: 2.2rem;
     }
+
+    .manifesto-text {
+        font-size: clamp(1.4rem, 4.5vw, 1.9rem);
+        line-height: 1.4;
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1444,11 +1463,11 @@ section {
 
 @media (max-width: 480px) {
     .section-title {
-        font-size: 1.9rem;
+        font-size: clamp(1.5rem, 7vw, 1.8rem);
     }
     
     .hero-title {
-        font-size: clamp(2rem, 8vw, 2.5rem);
+        font-size: clamp(1.6rem, 8vw, 2.2rem);
     }
     
     .timeline-line {
@@ -1492,6 +1511,25 @@ section {
         font-size: 1.15rem;
         letter-spacing: 1px;
     }
+
+    .detail-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        padding: 20px;
+    }
+    
+    .detail-val {
+        font-size: 0.9rem;
+        word-break: break-all;
+    }
+
+    .manifesto-text {
+        font-size: clamp(1.1rem, 5vw, 1.35rem);
+        line-height: 1.5;
+        padding: 0 35px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -1521,7 +1559,7 @@ section {
 }
 .reviews-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 30px;
 }
 .review-card {
@@ -1635,7 +1673,7 @@ section {
 
 .process-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -1717,7 +1755,7 @@ section {
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -1818,7 +1856,7 @@ section {
 }
 
 .manifesto-wrapper {
-    max-width: 900px;
+    max-width: 760px;
     margin: 0 auto;
     text-align: center;
     padding: 80px 0;
@@ -1863,7 +1901,7 @@ section {
 
 .hud-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -1991,7 +2029,7 @@ section {
 
 .contact-details-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
     gap: 30px;
     max-width: 800px;
     margin: 0 auto 50px auto;
